@@ -182,7 +182,7 @@ function convertXmlToTypeScriptModelFile(xmlObject: any, resxFilename: string, t
             // Write the file aside of the the resx file.
             fs.writeFile(tsFileName, content, null);                           
 
-            addTypeScriptFile.execute(tsFileName);                          
+            // addTypeScriptFile.execute(tsFileName);                          
         }
         else {
             // Write the file to the given output folder.
@@ -194,7 +194,7 @@ function convertXmlToTypeScriptModelFile(xmlObject: any, resxFilename: string, t
             
             fs.writeFile(outputFileName, content, null); 
             
-            addTypeScriptFile.execute(relativeOutputFileName);                          
+            // addTypeScriptFile.execute(relativeOutputFileName);                          
         }
     }
 }
